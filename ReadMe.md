@@ -25,4 +25,12 @@
 - Sınıflar ihtiyaçları olmayan özellikleri ve davranışları içeren interface'lerden implement edilmemelidir. 
 
 
-- **Örnek1:**   IFlightlessBird ve IFlyingBird arayüzleri olsun, bu interfaceler Uçma ve Yürüyebilme yeteneklerine sahip olsun. İlgili interface'yi Tavuk ve Şahin sınıflarına implement ettiğimizi varsayalım. Bu implementation sonucunda Tavuk ve Şahin sınıfları ilgili yeteneklere kavuşur. Bu bağlamda sınıflar implemantation sonucunda ediğindiği yetenekleri karşılamamaktadır. Bu senaryoda Tavuk ve Şahin sınıfları gerekisiz bir davranış kazanmış ve bu Interface segration prensibine ters düşmüş durumdadır. Bu durumu düzeltmek için Uçabilen, Yürüyebilen kuşlar tarzında interface'ler açarak alt sınıfların gereksiz davranışlar kazanmasının önüne geçebiliriz.
+- **Örnek1:**   IFlightlessBird ve IFlyingBird arayüzleri olsun, bu interfaceler Uçma ve Yürüyebilme yeteneklerine sahip olsun. İlgili interface'yi Tavuk ve Şahin sınıflarına implement ettiğimizi varsayalım. Bu implementation sonucunda Tavuk ve Şahin sınıfları ilgili yeteneklere kavuşur. Bu bağlamda sınıflar implemantation sonucunda ediğindiği yetenekleri karşılamamaktadır. Bu senaryoda Tavuk ve Şahin sınıfları gerekisiz bir davranış kazanmış ve bu Interface segration prensibine ters düşmüş durumdadır. Bu durumu düzeltmek için Uçabilen, Uçamayan kuşlar tarzında interface'ler açarak alt sınıfların gereksiz davranışlar kazanmasının önüne geçebiliriz.
+
+
+## Dependency inversion principle
+- Varlıklar somutlara değil soyutlamalara bağlı olmalıdır.Bu prensip üst düzey modülün alt düzey modüllere bağlı olmaması gerektiğini savunur. Ancak soyutlamalara bağlı olması gerektiğini belirtir.
+
+- "Üst düzey modülün alt düzey modülere bağlı olmaması gerektiğini savunur." Bu cümleyi birazcık açacak olursak, üst düzey bir sınıfta bir değişiklik yaptığımızda bu değişiklikten etkilenecek sınıf sayısının optimum düzeyde olması gerekir. 
+
+- **Örnek1:**   Restaurant sınıfımız high level, fish ve pultry sınıflarımız ise low level oalrak tanımlanır. Restaurant sınıfımız ise iki low level sınıftan instance alınmış ve bağımlılık oluşmuştur. Soyutlama yöntemiyle bu bağımlılığı ortadan kaldırıyoruz.

@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DependencyInversionPrinciple\ExampleOne\Bad\BadFish.cs" />
+    <Compile Include="DependencyInversionPrinciple\ExampleOne\Bad\BadPoultry.cs" />
+    <Compile Include="DependencyInversionPrinciple\ExampleOne\Bad\BadRestaurant.cs" />
+    <Compile Include="DependencyInversionPrinciple\ExampleOne\Good\Abstraction\IProduct.cs" />
+    <Compile Include="DependencyInversionPrinciple\ExampleOne\Good\Concrete\Fish.cs" />
+    <Compile Include="DependencyInversionPrinciple\ExampleOne\Good\Concrete\Kebab.cs" />
+    <Compile Include="DependencyInversionPrinciple\ExampleOne\Good\Concrete\Poultry.cs" />
+    <Compile Include="DependencyInversionPrinciple\ExampleOne\Good\Concrete\Restaurant.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
