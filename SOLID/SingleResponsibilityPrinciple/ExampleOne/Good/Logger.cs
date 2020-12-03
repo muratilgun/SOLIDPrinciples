@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID.SingleResponsibilityPrinciple.Good
+namespace SOLID.SingleResponsibilityPrinciple.ExampleOne.Good
 {
     public class Logger
     {

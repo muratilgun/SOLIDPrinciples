@@ -1,15 +1,21 @@
-**Single Responsibilty Principle**
+ï»¿## Single Responsibilty Principle
 
-- Bir sınıf, method sadece bir işi yapmalıdır.
+- Bir sÄ±nÄ±f, method sadece bir iÅŸi yapmalÄ±dÄ±r.
 
-- Bir sınıfın değişmesi için sadece bir nedeni olmalıdır. Yani bir sınıfın yanlızca bir işi olmalıdır.
+- Bir sÄ±nÄ±fÄ±n deÄŸiÅŸmesi iÃ§in sadece bir nedeni olmalÄ±dÄ±r. Yani bir sÄ±nÄ±fÄ±n yanlÄ±zca bir iÅŸi olmalÄ±dÄ±r.
 
-- Örneğin, işe yeni başlamış personelin özlük bilgilerinin sisteme kaydedilmesi, bu işlemin loglarının tutulması ve ilgili kişi sisteme kayıt olduğunda müdürüne bilgilendirme e-postası gönderecek basit bir uygulamamız olduğunu düşünelim. Bu işlemleri tek bir sınıf içerisinde yerine getirebiliriz. Bu işlemi bu şekilde yaparsak bu prensibe ters düşmüş oluruz. Bu prensibe uymak için tüm bu işlemleri ayrı sınıflarda ele alamamız gerekmektedir. Her sınıfın sadece bir sorumluluğu olmalıdır. Örneğin, loglama işlemi için bir sınıfın, çalışanı veri tabanına kaydetmek için bir sınıf ve bilgilendirme e-postası için bir sınıf kullanılımalıdır.
-
-
-**Open & Close Principle**
+- **Ã–rnek1:**  Ä°ÅŸe yeni baÅŸlamÄ±ÅŸ personelin Ã¶zlÃ¼k bilgilerinin sisteme kaydedilmesi, bu iÅŸlemin loglarÄ±nÄ±n tutulmasÄ± ve ilgili kiÅŸi sisteme kayÄ±t olduÄŸunda mÃ¼dÃ¼rÃ¼ne bilgilendirme e-postasÄ± gÃ¶nderecek basit bir uygulamamÄ±z olduÄŸunu dÃ¼ÅŸÃ¼nelim. Bu iÅŸlemleri tek bir sÄ±nÄ±f iÃ§erisinde yerine getirebiliriz. Bu iÅŸlemi bu ÅŸekilde yaparsak bu prensibe ters dÃ¼ÅŸmÃ¼ÅŸ oluruz. Bu prensibe uymak iÃ§in tÃ¼m bu iÅŸlemleri ayrÄ± sÄ±nÄ±flarda ele alamamÄ±z gerekmektedir. Her sÄ±nÄ±fÄ±n sadece bir sorumluluÄŸu olmalÄ±dÄ±r. Ã–rneÄŸin, loglama iÅŸlemi iÃ§in bir sÄ±nÄ±fÄ±n, Ã§alÄ±ÅŸanÄ± veri tabanÄ±na kaydetmek iÃ§in bir sÄ±nÄ±f ve bilgilendirme e-postasÄ± iÃ§in bir sÄ±nÄ±f kullanÄ±lÄ±malÄ±dÄ±r.
 
 
-- Nesneler ve varlıklar genişlemeye açık olmalı, ancak değişikliğe kapalı olmalıdır.Her yeni sınıf oluşturmak istediğimizde , bu oluşturmak istediğimiz sınıfı rahat bir şekilde oluşturmak isteriz.Zaten OOP genişletilebilirliği destekler.Lakin bu genişleme esnasında yaratılan sınıflarda modifikasyona gerek kalmayacak şekilde mimariyi kurmak gerekmektedir. 
+## Open & Close Principle
 
-- Örneğin basit bir coffeshop uygulaması düşünelim, bu uygulamada bir coffe sınıfım ve coffee type'Larını tutacak enum var. Her yeni bir kahve türü geldiğinde enum'a kahve türünü ekliyoruz. Coffe sınıfında ise if-else yapılarıyla ilgli kahve türlerine göre içilen kahve birim fiyatına ve miktarına göre ücret hesabı yapıyor.Ama bu senaryodaki mimari bu prensibe ters düşmektedir. Bu prensibe uymak istersek soyut bir sınıfa methot tanımlayarak bu methodu her bir kahve için açacağımız sınıfta override ederek kullanmalıyız. Böylelikle her kahve için var olan sınıflarımda bir değişikliğe gitmemiş olacağım.Soyut sınıf yardımıyla kural koyarak alt sınıflarımızı değişeme kapalı tutmuş olduk. 
+
+- Nesneler ve varlÄ±klar geniÅŸlemeye aÃ§Ä±k olmalÄ±, ancak deÄŸiÅŸikliÄŸe kapalÄ± olmalÄ±dÄ±r.Her yeni sÄ±nÄ±f oluÅŸturmak istediÄŸimizde , bu oluÅŸturmak istediÄŸimiz sÄ±nÄ±fÄ± rahat bir ÅŸekilde oluÅŸturmak isteriz.Zaten OOP geniÅŸletilebilirliÄŸi destekler.Lakin bu geniÅŸleme esnasÄ±nda yaratÄ±lan sÄ±nÄ±flarda modifikasyona gerek kalmayacak ÅŸekilde mimariyi kurmak gerekmektedir. 
+
+- **Ã–rnek1:**  Basit bir coffeshop uygulamasÄ± dÃ¼ÅŸÃ¼nelim, bu uygulamada bir coffe sÄ±nÄ±fÄ±m ve coffee type'LarÄ±nÄ± tutacak enum var. Her yeni bir kahve tÃ¼rÃ¼ geldiÄŸinde enum'a kahve tÃ¼rÃ¼nÃ¼ ekliyoruz. Coffe sÄ±nÄ±fÄ±nda ise if-else yapÄ±larÄ±yla ilgli kahve tÃ¼rlerine gÃ¶re iÃ§ilen kahve birim fiyatÄ±na ve miktarÄ±na gÃ¶re Ã¼cret hesabÄ± yapÄ±yor.Ama bu senaryodaki mimari bu prensibe ters dÃ¼ÅŸmektedir. Bu prensibe uymak istersek soyut bir sÄ±nÄ±fa methot tanÄ±mlayarak bu methodu her bir kahve iÃ§in aÃ§acaÄŸÄ±mÄ±z sÄ±nÄ±fta override ederek kullanmalÄ±yÄ±z. BÃ¶ylelikle her kahve iÃ§in var olan sÄ±nÄ±flarÄ±mda bir deÄŸiÅŸikliÄŸe gitmemiÅŸ olacaÄŸÄ±m.Soyut sÄ±nÄ±f yardÄ±mÄ±yla kural koyarak alt sÄ±nÄ±flarÄ±mÄ±zÄ± deÄŸiÅŸeme kapalÄ± tutmuÅŸ olduk. 
+
+## Liskov Substitution Principle
+
+- Alt sÄ±nÄ±flarda oluÅŸan nesneler Ã¼st sÄ±nÄ±flardan oluÅŸan nesneler ile yer deÄŸiÅŸtirilebilir olmalÄ±dÄ±r. 
+
+- **Ã–rnek1:**  Karenin ve dikdÃ¶rtgenin alanÄ±nÄ± hesaplayan basit bir uygulamamÄ±z olsun. Bir dikdÃ¶rtgen sÄ±nÄ±f oluÅŸturarak bu sÄ±nÄ±fa 2 member veriyoruz. YÃ¼ksekllik ve uzunluk, fakat kare geometrik ÅŸekili iÃ§in bu ata sÄ±nÄ±f Ã§okta uygun olmamaktadÄ±r. Yani dikdÃ¶rtgen sÄ±nÄ±fÄ±ndan kalÄ±tÄ±m alan bir kare sÄ±nÄ±fÄ±ndan nesne oluÅŸturmaya kalkarsak ata sÄ±nÄ±flarÄ±n mantÄ±ÄŸÄ±ndan ve amacÄ±ndan ÅŸaÅŸmÄ±ÅŸ oluyoruz ve bu prensibe ters dÃ¼ÅŸmÃ¼ÅŸ oluyoruz. Bu hatayÄ± dÃ¼zeltmek iÃ§in dÃ¶rtgen yapÄ±snÄ±n ortak Ã¶zelliklerini barÄ±ndÄ±racak bir sÄ±nÄ±f oluÅŸturulmalÄ± ve her bir geometrik ÅŸekil iÃ§in bir sÄ±nÄ±f oluÅŸturularak kendi alan hesaplamalarÄ±na sahip olduÄŸundan emin olmalÄ±yÄ±z.

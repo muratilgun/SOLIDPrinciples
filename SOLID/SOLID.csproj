@@ -52,17 +52,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="OpenClosePrinciple\Bad\BadCoffee.cs" />
-    <Compile Include="OpenClosePrinciple\Good\Abstraction\GoodCoffee.cs" />
-    <Compile Include="OpenClosePrinciple\Good\Concrete\Espresso.cs" />
-    <Compile Include="OpenClosePrinciple\Good\Concrete\Latte.cs" />
-    <Compile Include="OpenClosePrinciple\Good\Concrete\Maccihato.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\ExampleOne\Bad\BadAreaCalculater.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\ExampleOne\Bad\BadRectangle.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\ExampleOne\Bad\BadSquare.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\ExampleOne\Good\Abstraction\Shape.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\ExampleOne\Good\Concrete\Retangle.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\ExampleOne\Good\Concrete\Square.cs" />
+    <Compile Include="OpenClosePrinciple\ExampleOne\Bad\BadCoffee.cs" />
+    <Compile Include="OpenClosePrinciple\ExampleOne\Good\Abstraction\GoodCoffee.cs" />
+    <Compile Include="OpenClosePrinciple\ExampleOne\Good\Concrete\Espresso.cs" />
+    <Compile Include="OpenClosePrinciple\ExampleOne\Good\Concrete\Latte.cs" />
+    <Compile Include="OpenClosePrinciple\ExampleOne\Good\Concrete\Maccihato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SingleResponsibilityPrinciple\Bad\BadEmployeeProcess.cs" />
-    <Compile Include="SingleResponsibilityPrinciple\Good\GoodEmployeeProcess.cs" />
-    <Compile Include="SingleResponsibilityPrinciple\Good\Logger.cs" />
-    <Compile Include="SingleResponsibilityPrinciple\Model\Employee.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\ExampleOne\Bad\BadEmployeeProcess.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\ExampleOne\Good\GoodEmployeeProcess.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\ExampleOne\Good\Logger.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\ExampleOne\Model\Employee.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

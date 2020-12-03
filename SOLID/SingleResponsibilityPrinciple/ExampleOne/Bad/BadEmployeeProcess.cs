@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using SOLID.SingleResponsibilityPrinciple.Model;
+using SOLID.SingleResponsibilityPrinciple.ExampleOne.Model;
 
-namespace SOLID.SingleResponsibilityPrinciple.Bad
+namespace SOLID.SingleResponsibilityPrinciple.ExampleOne.Bad
 {
     public class BadEmployeeProcess
     {

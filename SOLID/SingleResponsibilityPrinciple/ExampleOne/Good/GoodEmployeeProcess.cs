@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SOLID.SingleResponsibilityPrinciple.Model;
+using SOLID.SingleResponsibilityPrinciple.ExampleOne.Model;
 
-namespace SOLID.SingleResponsibilityPrinciple.Good
+namespace SOLID.SingleResponsibilityPrinciple.ExampleOne.Good
 {
     public class GoodEmployeeProcess
     {
