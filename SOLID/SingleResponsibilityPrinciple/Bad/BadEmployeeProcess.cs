@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SOLID.SingleResponsibilityPrinciples.Model;
+using SOLID.SingleResponsibilityPrinciple.Model;
 
-namespace SOLID.SingleResponsibilityPrinciples.Bad
+namespace SOLID.SingleResponsibilityPrinciple.Bad
 {
     public class BadEmployeeProcess
     {

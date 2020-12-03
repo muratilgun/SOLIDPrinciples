@@ -52,12 +52,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="OpenClosePrinciple\Bad\BadCoffee.cs" />
+    <Compile Include="OpenClosePrinciple\Good\Abstraction\GoodCoffee.cs" />
+    <Compile Include="OpenClosePrinciple\Good\Concrete\Espresso.cs" />
+    <Compile Include="OpenClosePrinciple\Good\Concrete\Latte.cs" />
+    <Compile Include="OpenClosePrinciple\Good\Concrete\Maccihato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SingleResponsibilityPrinciples\Bad\BadEmployeeProcess.cs" />
-    <Compile Include="SingleResponsibilityPrinciples\Good\GoodEmployeeProcess.cs" />
-    <Compile Include="SingleResponsibilityPrinciples\Good\Logger.cs" />
-    <Compile Include="SingleResponsibilityPrinciples\Model\Employee.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\Bad\BadEmployeeProcess.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\Good\GoodEmployeeProcess.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\Good\Logger.cs" />
+    <Compile Include="SingleResponsibilityPrinciple\Model\Employee.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

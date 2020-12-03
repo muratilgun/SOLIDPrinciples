@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID.SingleResponsibilityPrinciples.Model
+namespace SOLID.SingleResponsibilityPrinciple.Model
 {
     public class Employee
     {
