@@ -52,6 +52,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterfaceSegrationPrinciple\ExampleOne\Bad\Abstraction\IBird.cs" />
+    <Compile Include="InterfaceSegrationPrinciple\ExampleOne\Bad\Concrete\Chicken.cs" />
+    <Compile Include="InterfaceSegrationPrinciple\ExampleOne\Bad\Concrete\Hawk.cs" />
+    <Compile Include="InterfaceSegrationPrinciple\ExampleOne\Good\Abstraction\IFlightlessBird.cs" />
+    <Compile Include="InterfaceSegrationPrinciple\ExampleOne\Good\Abstraction\IFlyingBird.cs" />
+    <Compile Include="InterfaceSegrationPrinciple\ExampleOne\Good\Concrete\Chicken.cs" />
+    <Compile Include="InterfaceSegrationPrinciple\ExampleOne\Good\Concrete\Hawk.cs" />
+    <Compile Include="InterfaceSegrationPrinciple\ExampleOne\Good\Concrete\Penguin.cs" />
     <Compile Include="LiskovSubstitutionPrinciple\ExampleOne\Bad\BadAreaCalculater.cs" />
     <Compile Include="LiskovSubstitutionPrinciple\ExampleOne\Bad\BadRectangle.cs" />
     <Compile Include="LiskovSubstitutionPrinciple\ExampleOne\Bad\BadSquare.cs" />

@@ -19,3 +19,10 @@
 - Alt sınıflarda oluşan nesneler üst sınıflardan oluşan nesneler ile yer değiştirilebilir olmalıdır. 
 
 - **Örnek1:**  Karenin ve dikdörtgenin alanını hesaplayan basit bir uygulamamız olsun. Bir dikdörtgen sınıf oluşturarak bu sınıfa 2 member veriyoruz. Yüksekllik ve uzunluk, fakat kare geometrik şekili için bu ata sınıf çokta uygun olmamaktadır. Yani dikdörtgen sınıfından kalıtım alan bir kare sınıfından nesne oluşturmaya kalkarsak ata sınıfların mantığından ve amacından şaşmış oluyoruz ve bu prensibe ters düşmüş oluyoruz. Bu hatayı düzeltmek için dörtgen yapısnın ortak özelliklerini barındıracak bir sınıf oluşturulmalı ve her bir geometrik şekil için bir sınıf oluşturularak kendi alan hesaplamalarına sahip olduğundan emin olmalıyız.
+
+## Interface Segration Principle
+
+- Sınıflar ihtiyaçları olmayan özellikleri ve davranışları içeren interface'lerden implement edilmemelidir. 
+
+
+- **Örnek1:**   IFlightlessBird ve IFlyingBird arayüzleri olsun, bu interfaceler Uçma ve Yürüyebilme yeteneklerine sahip olsun. İlgili interface'yi Tavuk ve Şahin sınıflarına implement ettiğimizi varsayalım. Bu implementation sonucunda Tavuk ve Şahin sınıfları ilgili yeteneklere kavuşur. Bu bağlamda sınıflar implemantation sonucunda ediğindiği yetenekleri karşılamamaktadır. Bu senaryoda Tavuk ve Şahin sınıfları gerekisiz bir davranış kazanmış ve bu Interface segration prensibine ters düşmüş durumdadır. Bu durumu düzeltmek için Uçabilen, Yürüyebilen kuşlar tarzında interface'ler açarak alt sınıfların gereksiz davranışlar kazanmasının önüne geçebiliriz.
